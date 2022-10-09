@@ -4,27 +4,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#F6FAFE"
     tools:context=".activities.SignUpActivity">
 
-    <TextView
-        android:id="@+id/textView"
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_margin="60dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Sign up"
-        android:textFontWeight="900"
-        android:textColor="@color/black"
-        android:textSize="28sp"
-        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.113" />
+        app:layout_constraintVertical_bias="0.007"
+        app:srcCompat="@drawable/logo" />
 
     <LinearLayout
         android:layout_width="414dp"
-        android:layout_height="532dp"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
         android:paddingHorizontal="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -32,16 +31,17 @@
         app:layout_constraintHorizontal_bias="0.666"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.703">
+        app:layout_constraintVertical_bias="0.61">
 
-        <TextView
-            android:id="@+id/login_input_label"
-            android:layout_width="wrap_content"
+        <EditText
+            android:id="@+id/login_input"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="6dp"
-            android:text="What is your email?"
+            android:layout_marginBottom="13dp"
+            android:background="@drawable/textview_border"
+            android:hint="Введите email"
+            android:padding="12dp"
             android:textSize="20sp"
-            android:textColor="@color/black"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -49,26 +49,15 @@
             app:layout_constraintVertical_bias="0.198" />
 
         <EditText
-            android:id="@+id/login_input"
+            android:id="@+id/password2_input"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@drawable/textview_border"
+            android:hint="Введите пароль"
+            android:inputType="textPassword"
+            android:padding="12dp"
+            android:textSize="20sp"
             android:layout_marginBottom="13dp"
-            android:hint="Enter email"
-            android:textSize="20sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.198" />
-
-        <TextView
-            android:id="@+id/password_input_label"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="6dp"
-            android:text="@string/password"
-            android:textSize="20sp"
-            android:textColor="@color/black"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -79,34 +68,37 @@
             android:id="@+id/password_input"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Create a password"
+            android:background="@drawable/textview_border"
+            android:hint="Повторите пароль"
+            android:inputType="textPassword"
+            android:padding="12dp"
             android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.198" />
+
         <CheckBox
-            android:layout_marginTop="30dp"
             android:id="@+id/checkBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="I agree with the user terms" />
+            android:layout_marginTop="30dp"
+            android:text="Я ознакомлен(-а) с политикой конфиденциальности приложения" />
 
         <Button
             android:id="@+id/signUp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
-            android:background="#F44336"
-            android:text="Sign up"
-            android:textSize="20sp"
+            android:background="@drawable/button_background"
+            android:text="Зарегистрироваться"
+            android:textSize="16sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.198" />
-
 
 
     </LinearLayout>
