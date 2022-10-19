@@ -57,10 +57,10 @@ public class SignUpActivity extends AppCompatActivity {
             field[0] = "email";
             field[1] = "password";
             //Creating array for data
-            String[] data = new String[4];
+            String[] data = new String[2];
             data[0] = "email";
             data[1] = "password";
-            PutData putData = new PutData("https://projects.vishnusivadas.com/AdvancedHttpURLConnection/putDataTest.php", "POST", field, data);
+            PutData putData = new PutData("https://localhost/registration", "POST", field, data);
             if (putData.startPut()) {
                 if (putData.onComplete()) {
                     String result = putData.getResult();
