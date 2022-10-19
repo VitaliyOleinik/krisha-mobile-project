@@ -1,12 +1,15 @@
  package com.kbtu.krisha.activities;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -23,12 +26,24 @@ public class SignUpActivity extends AppCompatActivity {
         setContentView(R.layout.sign_up_main);
 
         Button to_sign_up = findViewById(R.id.signUp);
+        CheckBox checkPolitics = findViewById(R.id.checkBox);
 
-        to_sign_up.setOnClickListener(new View.OnClickListener() {
+
+        checkPolitics.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(SignUpActivity.this, MainActivity.class);
-                startActivity(intent);
+                if(((CompoundButton) view).isChecked()){
+                    to_sign_up.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View view) {
+                            Intent intent = new Intent(SignUpActivity.this, MainActivity.class);
+                            startActivity(intent);
+                        }
+                    });
+                } else {
+                    checkPolitics.setTextColor(Color.RED);
+                    System.out.println("Un-Checked");
+                }
             }
         });
 
