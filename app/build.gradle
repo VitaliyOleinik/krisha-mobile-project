@@ -3,7 +3,7 @@ plugins {
 }
 
 android {
-    compileSdkVersion 32
+    compileSdkVersion 30
 
     defaultConfig {
         configurations.all {
@@ -11,7 +11,7 @@ android {
         }
         applicationId "com.kbtu.krisha"
         minSdkVersion 21
-        targetSdkVersion 32
+        targetSdkVersion 30
         versionCode 1
         versionName "1.0"
 
