@@ -5,11 +5,15 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
 import com.kbtu.krisha.R;
+import com.vishnusivadas.advanced_httpurlconnection.PutData;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -32,9 +36,35 @@ public class LoginActivity extends AppCompatActivity {
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(LoginActivity.this, MainActivity.class);
-                startActivity(intent);
+                if (isLogin()) {
+                    Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                    startActivity(intent);
+                }
             }
         });
+    }
+
+    private Boolean isLogin() {
+        //Start ProgressBar first (Set visibility VISIBLE)
+        Handler handler = new Handler(Looper.getMainLooper());
+        handler.post(() -> {
+            //Starting Write and Read data with URL
+            //Creating array for parameters
+            String[] field = new String[1];
+            field[0] = "boolean";
+            //Creating array for data
+            String[] data = new String[1];
+            data[0] = "boolean";
+            PutData putData = new PutData("https://localhost/login", "POST", field, data);
+            if (putData.startPut()) {
+                if (putData.onComplete()) {
+                    String result = putData.getResult();
+                    //End ProgressBar (Set visibility to GONE)
+                    Log.i("PutData", result);
+                }
+            }
+            //End Write and Read data with URL
+        });
+        return true;
     }
 }
