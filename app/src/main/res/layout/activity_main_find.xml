@@ -6,4 +6,48 @@
     android:layout_height="match_parent"
     tools:context=".activities.MainFindActivity">
 
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Подать объявление"
+        android:paddingVertical="10dp"
+        android:layout_marginHorizontal="30dp"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Вы хотите"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:textFontWeight="@android:integer/config_mediumAnimTime"
+        android:layout_marginHorizontal="30dp"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="84dp">
+    </TextView>
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:text="Продать"/>
+
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="24dp"
+        android:layout_height="wrap_content"
+        android:text="Продать"
+        android:textColor="@android:color/black" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Продать"
+        android:textColor="@android:color/black" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
