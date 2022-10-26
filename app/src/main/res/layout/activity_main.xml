@@ -7,31 +7,42 @@
     tools:context=".activities.MainActivity">
 
 
-    <TextView
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.007"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="5dp"
-        android:text="Главная страница">
-    </TextView>
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="432dp"
+        android:layout_height="824dp"
+        android:background="@drawable/background"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="-93dp"/>
 
     <Button
         android:id="@+id/find"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="122dp"
-        tools:layout_editor_absoluteY="303dp" />
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="16dp"
+        android:text="Найти жилье"
+        android:textColor="@color/white"
+        android:layout_marginHorizontal="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.750" />
 
     <Button
         android:id="@+id/post"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="57dp"
-        tools:layout_editor_absoluteY="547dp" />
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:text="Подать объявление"
+        android:textColor="#000fff"
+        android:theme="@style/Theme.AppCompat.Light.DialogWhenLarge"
+        android:layout_marginHorizontal="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.850"  />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
