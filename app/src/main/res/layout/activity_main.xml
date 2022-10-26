@@ -18,4 +18,20 @@
         android:layout_marginLeft="5dp"
         android:text="Главная страница">
     </TextView>
+
+    <Button
+        android:id="@+id/find"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        tools:layout_editor_absoluteX="122dp"
+        tools:layout_editor_absoluteY="303dp" />
+
+    <Button
+        android:id="@+id/post"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        tools:layout_editor_absoluteX="57dp"
+        tools:layout_editor_absoluteY="547dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
