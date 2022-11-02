@@ -21,10 +21,14 @@
             <Button
                 android:id="@+id/button"
                 android:textSize="16sp"
+                android:background="#147CE2"
                 android:layout_width="match_parent"
+                android:textAlignment="center"
+                android:paddingVertical="14dp"
+                android:textColor="#FFFFFF"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/roboto_medium"
-                android:text="Подать объявление"></Button>
+                android:text="Подать объявление" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -70,7 +74,7 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/roboto_medium"
-                            android:textSize="14sp"
+                            android:textSize="16sp"
                             android:layout_weight="1"
                             android:text="Продать">
                         </CheckBox>
@@ -79,7 +83,7 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/roboto_medium"
-                            android:textSize="14sp"
+                            android:textSize="16sp"
                             android:layout_weight="1"
                             android:text="Сдать в аренду">
                         </CheckBox>
@@ -111,7 +115,7 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/roboto_medium"
-                            android:textSize="14sp"
+                            android:textSize="16sp"
                             android:layout_weight="1"
                             android:text="Дом">
                         </CheckBox>
@@ -120,7 +124,7 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/roboto_medium"
-                            android:textSize="14sp"
+                            android:textSize="16sp"
                             android:layout_weight="1"
                             android:text="Квартира">
                         </CheckBox>
@@ -173,9 +177,11 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:textColor="#878787"
+                                android:textSize="16sp"
                                 android:text="Город">
                             </TextView>
                             <EditText
+                                android:textSize="16sp"
                                 android:id="@+id/city"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
@@ -191,9 +197,11 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:textColor="#878787"
+                                android:textSize="16sp"
                                 android:text="Район">
                             </TextView>
                             <EditText
+                                android:textSize="16sp"
                                 android:id="@+id/region"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
@@ -216,9 +224,11 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:textColor="#878787"
+                                android:textSize="16sp"
                                 android:text="Микрорайон">
                             </TextView>
                             <EditText
+                                android:textSize="16sp"
                                 android:id="@+id/microdistrict"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
@@ -234,9 +244,11 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:textColor="#878787"
+                                android:textSize="16sp"
                                 android:text="Улица, номер дома">
                             </TextView>
                             <EditText
+                                android:textSize="16sp"
                                 android:id="@+id/street"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
@@ -293,9 +305,11 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:textColor="#878787"
+                                android:textSize="16sp"
                                 android:text="Количество комнат">
                             </TextView>
                             <EditText
+                                android:textSize="16sp"
                                 android:id="@+id/roomNumber"
                                 android:inputType="number"
                                 android:layout_width="match_parent"
@@ -312,9 +326,11 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:textColor="#878787"
+                                android:textSize="16sp"
                                 android:text="Этаж">
                             </TextView>
                             <EditText
+                                android:textSize="16sp"
                                 android:id="@+id/floorNumber"
                                 android:inputType="number"
                                 android:layout_width="match_parent"
@@ -338,13 +354,15 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:textColor="#878787"
+                                android:textSize="16sp"
                                 android:text="Общая площадь, м">
                             </TextView>
                             <EditText
                                 android:id="@+id/totalArea"
+                                android:textSize="16sp"
                                 android:inputType="number"
                                 android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
+                                android:layout_height="24dp"
                                 android:background="@drawable/gray_border_r4">
                             </EditText>
                         </LinearLayout>
@@ -357,11 +375,13 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:textColor="#878787"
+                                android:textSize="16sp"
                                 android:text="Площадь кухни, м">
                             </TextView>
                             <EditText
                                 android:id="@+id/kitchenArea"
                                 android:inputType="number"
+                                android:textSize="16sp"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/gray_border_r4">
@@ -382,6 +402,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:textColor="#878787"
+                                android:textSize="16sp"
                                 android:text="Описание">
                             </TextView>
                             <EditText
@@ -392,6 +413,7 @@
                                 android:paddingTop="8dp"
                                 android:paddingBottom="20dp"
                                 android:paddingHorizontal="8dp"
+                                android:textSize="16sp"
                                 android:hint="Расскажите об особенностях квартиры/дома, добавьте дополнительную информацию, чтобы точнее описать квартиру/дом "
                                 android:background="@drawable/gray_border_r4">
                             </EditText>
@@ -434,6 +456,7 @@
                     <EditText
                         android:inputType="number"
                         android:layout_marginTop="10dp"
+                        android:textSize="16sp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@drawable/gray_border_r4">
