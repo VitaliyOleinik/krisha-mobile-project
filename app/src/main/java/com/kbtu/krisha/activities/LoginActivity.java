@@ -43,7 +43,7 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
     }
-
+    //TODO update version Constraint
     private Boolean isLogin() {
         //Start ProgressBar first (Set visibility VISIBLE)
         Handler handler = new Handler(Looper.getMainLooper());
