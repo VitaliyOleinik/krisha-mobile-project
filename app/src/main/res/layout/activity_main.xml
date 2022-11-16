@@ -37,7 +37,6 @@
         android:background="@color/white"
         android:text="Подать объявление"
         android:textColor="#000fff"
-        android:theme="@style/Theme.AppCompat.Light.DialogWhenLarge"
         android:layout_marginHorizontal="40dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
