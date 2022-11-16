@@ -34,6 +34,7 @@
                     android:layout_height="wrap_content">
                 </ImageView>
                 <EditText
+                    android:id="@+id/search"
                     android:hint="Поиск"
                     android:textColor="@color/black"
                     android:background="@color/white"
@@ -63,6 +64,7 @@
                         android:layout_weight="1">
                     </TextView>
                     <TextView
+                        android:id="@+id/list1_show_all"
                         android:layout_width="wrap_content"
                         android:text="Смотреть все"
                         android:textColor="#147CE2"
@@ -72,6 +74,7 @@
                 </LinearLayout>
 
                 <HorizontalScrollView
+                    android:id="@+id/list1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
                     <LinearLayout
@@ -218,6 +221,7 @@
                         android:layout_weight="1">
                     </TextView>
                     <TextView
+                        android:id="@+id/list2_show_all"
                         android:layout_width="wrap_content"
                         android:text="Смотреть все"
                         android:textColor="#147CE2"
@@ -228,6 +232,7 @@
 
 
                 <HorizontalScrollView
+                    android:id="@+id/list2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
                     <LinearLayout
