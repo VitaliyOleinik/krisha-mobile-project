@@ -17,6 +17,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <LinearLayout
+                android:id="@+id/itemImage"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
@@ -29,6 +30,7 @@
                 android:paddingBottom="30dp"
                 android:paddingHorizontal="20dp">
                 <TextView
+                    android:id="@+id/price"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="22sp"
@@ -38,6 +40,7 @@
                     android:text="50 000 000 тг">
                 </TextView>
                 <TextView
+                    android:id="@+id/description"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="20sp"
@@ -54,6 +57,7 @@
                         android:src="@drawable/location">
                     </ImageView>
                     <TextView
+                        android:id="@+id/location"
                         android:layout_marginLeft="4dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -62,6 +66,7 @@
                     </TextView>
                 </LinearLayout>
                 <TextView
+                    android:id="@+id/information_title"
                     android:layout_marginTop="25dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -76,6 +81,7 @@
                     android:orientation="horizontal"
                     android:layout_marginBottom="8dp">
                     <TextView
+                        android:id="@+id/key_1"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -83,6 +89,7 @@
                         android:textSize="16sp">
                     </TextView>
                     <TextView
+                        android:id="@+id/value_1"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -96,6 +103,7 @@
                     android:orientation="horizontal"
                     android:layout_marginBottom="8dp">
                     <TextView
+                        android:id="@+id/key_2"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -103,6 +111,7 @@
                         android:textSize="16sp">
                     </TextView>
                     <TextView
+                        android:id="@+id/value_2"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -116,6 +125,7 @@
                     android:orientation="horizontal"
                     android:layout_marginBottom="8dp">
                     <TextView
+                        android:id="@+id/key_3"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -123,6 +133,7 @@
                         android:textSize="16sp">
                     </TextView>
                     <TextView
+                        android:id="@+id/value_3"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -136,6 +147,7 @@
                     android:orientation="horizontal"
                     android:layout_marginBottom="8dp">
                     <TextView
+                        android:id="@+id/key_4"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -143,6 +155,7 @@
                         android:textSize="16sp">
                     </TextView>
                     <TextView
+                        android:id="@+id/value_4"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -156,6 +169,7 @@
                     android:orientation="horizontal"
                     android:layout_marginBottom="8dp">
                     <TextView
+                        android:id="@+id/key_5"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -163,6 +177,7 @@
                         android:textSize="16sp">
                     </TextView>
                     <TextView
+                        android:id="@+id/value_5"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -171,6 +186,7 @@
                     </TextView>
                 </LinearLayout>
                 <TextView
+                    android:id="@+id/show_all_button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="18sp"
@@ -180,6 +196,7 @@
                 </TextView>
 
                 <LinearLayout
+                    android:id="@+id/author_card"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="#FFFFFF"
@@ -192,6 +209,7 @@
                         android:layout_weight="1"
                         android:orientation="vertical">
                         <TextView
+                            android:id="@+id/author_name"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="20dp"
@@ -199,6 +217,7 @@
                             android:text="Даулетов Карим">
                         </TextView>
                         <TextView
+                            android:id="@+id/author_status"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="18dp"
@@ -207,6 +226,7 @@
                             android:text="Подтвержденный пользователь">
                         </TextView>
                         <TextView
+                            android:id="@+id/author_phone_number"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="18dp"
@@ -216,6 +236,7 @@
                         </TextView>
                     </LinearLayout>
                     <ImageView
+                        android:id="@+id/author_image"
                         android:background="@drawable/gray_circle_background"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
