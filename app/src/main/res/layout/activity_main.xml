@@ -1,47 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:paddingHorizontal="20dp"
+    android:gravity="bottom"
     tools:context=".activities.MainActivity">
-
-
-    <RelativeLayout
-        android:id="@+id/relativeLayout"
-        android:layout_width="432dp"
-        android:layout_height="824dp"
-        android:background="@drawable/background"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="-16dp"
-        tools:layout_editor_absoluteY="-93dp"/>
 
     <Button
         android:id="@+id/find"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_marginBottom="16dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:paddingVertical="20dp"
         android:text="Найти жилье"
-        android:textColor="@color/white"
-        android:layout_marginHorizontal="40dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.750" />
+        android:textSize="16sp"
+        android:textAlignment="center"
+        android:background="@drawable/button_background_blue_white_border"
+        android:textColor="@color/white" />
 
     <Button
         android:id="@+id/post"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:background="@color/white"
+        android:layout_height="wrap_content"
+        android:paddingVertical="20dp"
+        android:textAlignment="center"
+        android:background="@drawable/button_white_background_r60"
         android:text="Подать объявление"
-        android:textColor="#000fff"
-        android:layout_marginHorizontal="40dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.850"  />
+        android:textColor="#147CE2"
+        android:layout_marginBottom="120dp"
+        android:textSize="16sp"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

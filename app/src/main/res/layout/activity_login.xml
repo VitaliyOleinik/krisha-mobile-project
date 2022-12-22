@@ -1,38 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#F6FAFE"
+    android:orientation="vertical"
+    android:paddingHorizontal="20dp"
     tools:context=".activities.SignUpActivity">
-
 
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_margin="60dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.007"
+        android:layout_marginTop="106dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="77dp"
         app:srcCompat="@drawable/logo" />
 
     <LinearLayout
-        android:layout_width="414dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:paddingHorizontal="30dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.666"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.467">
+        android:orientation="vertical">
 
         <EditText
             android:id="@+id/login_input"
@@ -42,12 +33,7 @@
             android:background="@drawable/textview_border"
             android:hint="Введите email"
             android:padding="12dp"
-            android:textSize="20sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.198" />
+            android:textSize="20sp" />
 
         <EditText
             android:id="@+id/password_input"
@@ -56,12 +42,7 @@
             android:background="@drawable/textview_border"
             android:hint="Введите пароль"
             android:padding="12dp"
-            android:textSize="20sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.198" />
+            android:textSize="20sp" />
 
         <Button
             android:id="@+id/login"
@@ -69,24 +50,23 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
             android:text="Войти"
+            android:textAlignment="center"
             android:background="@drawable/button_background"
-            android:textSize="16sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.198" />
+            android:textColor="#F6FAFE"
+            android:paddingVertical="18dp"
+            android:textSize="16sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_gravity="center"
             android:layout_marginTop="28dp"
             android:textAlignment="center">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:layout_marginLeft="50dp"
                 android:text="Нет аккаунта?">
             </TextView>
 
@@ -95,6 +75,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
+                android:textSize="14sp"
                 android:text="Зарегистрироваться"
                 android:textColor="@color/blue">
             </TextView>
@@ -103,4 +84,4 @@
     </LinearLayout>
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
